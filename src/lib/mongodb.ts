@@ -6,9 +6,12 @@ if (!MONGODB_URI) {
   throw new Error("Please define the MONGODB_URI environment variable");
 }
 
+// @ts-expect-error - This is a workaround to avoid type errors
 let cached = global.mongoose;
 
 if (!cached) {
+  // @ts-expect-error - This is a workaround to avoid type errors
+
   cached = global.mongoose = { conn: null, promise: null };
 }
 
