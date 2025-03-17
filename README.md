@@ -21,6 +21,7 @@ MongoDB Connection Setup
 The application connects to MongoDB using a connection string specified in the .env.local file:
 
 MONGODB_URI=mongodb://localhost:27017/Innovate
+PORT=5000
 
 You can modify this connection string to point to your MongoDB instance:
 For local development: mongodb://localhost:27017/your-database-name
